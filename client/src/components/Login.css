@@ -1,0 +1,106 @@
+.login-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #0a0a1a 0%, #000 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Atmosphere */
+.login-container::before {
+  content: '';
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.05) 0%, transparent 70%);
+  filter: blur(100px);
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(30px);
+  padding: 80px; /* MASSIVE PADDING */
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  width: 600px; /* INCREASED WIDTH */
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8), 0 0 40px rgba(138, 43, 226, 0.1);
+  animation: scaleIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  z-index: 1;
+}
+
+.login-icon-large {
+  font-size: 5rem; /* BIG SECURITY ICON */
+  margin-bottom: 30px;
+  display: block;
+}
+
+.login-title {
+  font-family: 'Syncopate', sans-serif;
+  color: #fff;
+  letter-spacing: 12px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.login-subtitle {
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 30px;
+  font-family: 'Michroma', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.account-text {
+  color: #00d2ff;
+  font-weight: bold;
+}
+
+.login-desc {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  line-height: 1.8;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #00d2ff, #8a2be2);
+  color: #fff;
+  border: none;
+  padding: 25px; /* MASSIVE BUTTON */
+  border-radius: 50px;
+  font-family: 'Michroma', sans-serif;
+  font-weight: bold;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 30px rgba(138, 43, 226, 0.3);
+}
+
+.login-btn:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 210, 255, 0.5);
+  letter-spacing: 6px;
+}
+
+.login-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

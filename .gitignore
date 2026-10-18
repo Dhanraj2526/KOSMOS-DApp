@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+client/node_modules/
+
+# Logs
+*.log
+
+# Security & Private Keys
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Hardhat artifacts
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# Extension builds
+extension/icon.png
+extension/*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+client/build/
+dist/

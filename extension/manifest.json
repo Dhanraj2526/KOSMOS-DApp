@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "KOSMOS Secure Drive",
+  "version": "1.3",
+  "description": "Securely upload and manage your decentralized assets. Supports both Sidebar and Popup modes.",
+  "permissions": [
+    "sidePanel",
+    "activeTab",
+    "storage",
+    "contextMenus"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "KOSMOS Quick Access",
+    "default_popup": "popup.html"
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  }
+}

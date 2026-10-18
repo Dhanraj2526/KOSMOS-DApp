@@ -1,0 +1,100 @@
+.top {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.choose {
+  background-color: transparent;
+  border: 1px solid rgba(20, 240, 255, 0.5);
+  border-radius: 12px;
+  color: #14f0ff;
+  padding: 12px 25px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 10px rgba(20, 240, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  min-height: 45px;
+}
+
+.choose:hover {
+  background-color: rgba(20, 240, 255, 0.1);
+  box-shadow: 0 0 15px rgba(20, 240, 255, 0.5), inset 0 0 10px rgba(20, 240, 255, 0.2);
+  text-shadow: 0 0 5px #14f0ff;
+}
+
+.image-preview {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+  vertical-align: middle;
+  box-shadow: 0 0 10px rgba(20, 240, 255, 0.3);
+}
+
+.textArea {
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.1rem;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.upload {
+  background-color: transparent;
+  border: 1px solid rgba(138, 43, 226, 0.5);
+  color: #8a2be2;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 10px rgba(138, 43, 226, 0.1);
+}
+
+.upload:hover:not(:disabled) {
+  background-color: rgba(138, 43, 226, 0.15);
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.5), inset 0 0 10px rgba(138, 43, 226, 0.2);
+  text-shadow: 0 0 5px #8a2be2;
+  border-color: #8a2be2;
+}
+
+.upload:disabled,
+.upload[disabled] {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
